@@ -1,9 +1,9 @@
+import { useState } from "react";
+import { getTodos } from "./utils/localStorageUtil";
+
 function App() {
-  return (
-    <>
-      <div className="font-bold text-red-500">Hello Tailwind</div>
-    </>
-  );
+  const [todos, setTodos] = useState(getTodos());
+  return <></>;
 }
 
 export default App;
